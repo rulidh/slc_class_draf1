@@ -11,13 +11,13 @@
 
 
 2. set djongo
->>pip install django pymongo
->>pip install djongo
+- >>pip install django pymongo
+- >>pip install djongo
 
 "gua pake mongoDB Atlas, jadi pake connection string buat ke mongoDB nya"
 --progres db baru sampe sini--
->>python manage.py makemigrations
->>python manage.py migrate
+- >>python manage.py makemigrations
+- >>python manage.py migrate
 
 
-*versi bebas tergantung punya sendiri aja
+*versinya bebas tergantung punya sendiri aja
