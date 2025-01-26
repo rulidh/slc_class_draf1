@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <h1>Selamat Datang</h1>
+    <p>Sign Language Class</p>
+    <h3 id="label-username">USERNAME</h3>
+    <div>
+        <input id="username"><button id="btn-join">Join Meeting</button>
+    </div>
+    <div class="main-grid-container">
+        <div id="video-container">
+            <!-- Local video element -->
+            <div><video id="local-video" style="float: left;" autoplay playsinline></video></div>
+            <button id="btn-toggle-audio">Audio Mute</button>
+            <button id="btn-toggle-video">Video Off</button>
+        </div>
+        <div id="chat">
+            <h3>Chat</h3>
+            <div id="messages">
+                <ul id="message-list"></ul>
+            </div>
+            <div><input id="msg"><button id="btn-send-msg">Send message</button></div>
+            <button id="btn-share-screen">Share Screen</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 capstone.</p>
+    </footer>
+
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+</body>
+</html>
