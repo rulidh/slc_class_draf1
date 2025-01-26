@@ -1,12 +1,12 @@
 
 1. set full
-aktifkan venv di direktori utama --> venv\Scripts\activate.bat
-install django --> pip install django==3.1.12
-install/upgrade pip --> python.exe -m pip install --upgrade pip
-masuk ke direktori dibawahnya --> cd slc
-WebSocket -->pip install channels
-djongo --> pip install djongo
-runserver -->python manage.py runserver
+- aktifkan venv di direktori utama --> venv\Scripts\activate.bat
+- install django >> pip install django==3.1.12
+- install/upgrade pip >> python.exe -m pip install --upgrade pip
+- masuk ke direktori dibawahnya >> cd slc
+- WebSocket >>pip install channels
+- djongo >> pip install djongo
+- runserver >>python manage.py runserver
 
 
 
