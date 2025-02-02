@@ -1,23 +1,9 @@
+install redis server,
+aktifkan redis di poweshell >> redis-server
+biarkan berjalan
 
-1. set full
-- aktifkan venv di direktori utama --> venv\Scripts\activate.bat
-- install django >> pip install django==3.1.12
-- install/upgrade pip >> python.exe -m pip install --upgrade pip
-- masuk ke direktori dibawahnya >> cd slc
-- WebSocket >>pip install channels
-- djongo >> pip install djongo
-- runserver >>python manage.py runserver
-
-
-
-2. set djongo
-- >>pip install django pymongo
-- >>pip install djongo
-
-"gua pake mongoDB Atlas, jadi pake connection string buat ke mongoDB nya"
---progres db baru sampe sini--
-- >>python manage.py makemigrations
-- >>python manage.py migrate
-
-
-*versinya bebas tergantung punya sendiri aja
+di terminal vsc:
+1. venv\Scripts\activate.bat
+2. cd slc
+3. pip install -r requirements.txt
+4. python manage.py runserver atau daphne -b 0.0.0.0 -p 8000 slc.asgi:application
