@@ -78,7 +78,7 @@ DATABASES = {
         'NAME': 'slc_capstone',  # Nama database
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb+srv://myAtlasDBUser:Vincent2002@myatlasclusteredu.jzsh9rx.mongodb.net/slc_capstone?retryWrites=true&w=majority&appName=myAtlasClusterEDU',
+            'host': 'mongodb+srv://srv_name:pwd@myatlasclusteredu.jzsh9rx.mongodb.net/dbname?retryWrites=true&w=majority&appName=srv_name',
             'authMechanism': 'SCRAM-SHA-1',
         }
     }
