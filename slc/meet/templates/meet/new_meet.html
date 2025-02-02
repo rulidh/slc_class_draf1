@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Meeting</title>
+</head>
+<body>
+    <h1>Create New Meeting</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        <button type="submit">Create Meeting</button>
+    </form>
+    {% if meeting_code %}
+        <h2>Meeting Code: {{ meeting_code }}</h2>
+        <form method="GET" action="{% url 'meeting_page' room_name=meeting_id %}">
+            <button type="submit">Go to Meeting</button>
+        </form>
+{% endif %}
+    <p><a href="{% url 'main_view' %}">Back to Main Page</a></p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Meeting</title>
+</head>
+<body>
+    <h1>Join Meeting</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="meeting_code">Meeting Code:</label>
+        <input type="text" name="meeting_code" required>
+        <br>
+        <button type="submit">Join Meeting</button>
+    </form>
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+    <p><a href="{% url 'main_view' %}">Back to Main Page</a></p>
+</body>
+</html>
